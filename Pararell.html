@@ -400,7 +400,7 @@ start&lt;-Sys.time()
 lapply_test&lt;-lapply(1:1000000,alph)
 stop&lt;-Sys.time()
 stop-start</code></pre>
-<pre><code>## Time difference of 10.48781 secs</code></pre>
+<pre><code>## Time difference of 10.68933 secs</code></pre>
 <pre class="r"><code>cores&lt;-detectCores()-1
 
 start&lt;-Sys.time()
@@ -409,16 +409,21 @@ cl&lt;-makeCluster(cores)
 par_test&lt;-parLapply(cl,1:1000000,alph)
 stop&lt;-Sys.time()
 stop-start</code></pre>
-<pre><code>## Time difference of 5.227087 secs</code></pre>
+<pre><code>## Time difference of 5.302041 secs</code></pre>
 <pre class="r"><code>start&lt;-Sys.time()
 mc_test&lt;-mclapply(1:1000000,alph)
 end&lt;-Sys.time()
 end-start</code></pre>
-<pre><code>## Time difference of 10.38706 secs</code></pre>
+<pre><code>## Time difference of 10.30332 secs</code></pre>
 <p>#Question 3 and 4</p>
 <p>(25 points) Create an R package that contains this function. </p>
-<p>(25 points) If you do not have one, set up a github account. Put the package on github.</p>
-<p>www.github.com/bridgetmcgowan/SImulation_HW5</p>
+<p>(25 points) If you do not have one, set up a github account. Put the package on github. </p>
+<p>www.github.com/bridgetmcgowan/SImulation_HW5  </p>
+<p>Test</p>
+<pre class="r"><code># library(devtools)
+# install_github(&quot;bridgetmcgowan/SImulation_HW5&quot;,force=T)
+# library(returnALetter)
+# alph(1)</code></pre>
 </div>
 
 
