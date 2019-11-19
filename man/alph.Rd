@@ -2,10 +2,10 @@
 \alias{alph}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Random Letter Function
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Returns a sinlge lower case letter for the given number inputted into the function
 }
 \usage{
 alph(x)
@@ -13,18 +13,14 @@ alph(x)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-%%     ~~Describe \code{x} here~~
+ a postive interger value for the number of random letters you wish to return. 
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+alph returns a chareter object
 }
 \references{
 %% ~put references to the literature/web site here ~
@@ -42,15 +38,11 @@ alph(x)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 
-## The function is currently defined as
-function (x) 
-{
-    sample(letters, 1)
-  }
+alph(1)
+alph(4)
+
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
