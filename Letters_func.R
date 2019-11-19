@@ -1,8 +1,7 @@
 library(installr)
 library(devtools)
 library(pkgbuild)
-#library(Rtools)
-install.packages("Rtools")
+
 alph<-function(x){
   sample(letters,1)
 }

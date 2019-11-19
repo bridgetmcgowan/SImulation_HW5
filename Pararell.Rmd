@@ -17,12 +17,23 @@ library(parallel)
 ```
 
 
-**Comperasion of Parallel**
+# Question 1 
 
+
+(25 points) Write a function that returns a randomly chosen letter of the alphabet.
 ```{r cars}
 alph<-function(x){
   sample(letters,1)
 }
+
+```
+# Question 2
+
+(25 points) Run this function some large number of times (e.g. 100000 or 1000000) using parallel computation. Compare the time it takes to running it not in parallel.\  
+
+
+
+```{r}
 
 set.seed(1)
 start<-Sys.time()
@@ -46,5 +57,22 @@ start<-Sys.time()
 mc_test<-mclapply(1:1000000,alph)
 end<-Sys.time()
 end-start
+```
+
+#Question 3 and 4 
+
+(25 points) Create an R package that contains this function.\ 
+
+(25 points) If you do not have one, set up a github account. Put the
+package on github.\  
+
+www.github.com/bridgetmcgowan/SImulation_HW5 \  
+
+Test 
+```{r}
+# library(devtools)
+# install_github("bridgetmcgowan/SImulation_HW5",force=T)
+# library(returnALetter)
+# alph(1)
 ```
 
