@@ -1,0 +1,9 @@
+Package: returnALetter
+Type: Package
+Title: Returns a random lower case letter
+Version: 1.0
+Date: 2019-11-19
+Author: Bridget 
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+License: What license is it under?
